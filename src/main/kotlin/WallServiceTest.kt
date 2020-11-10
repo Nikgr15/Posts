@@ -1,4 +1,5 @@
-import org.junit.Assert.*
+
+import org.junit.Assert.assertFalse
 import org.junit.Test
 import ru.netology.Post
 import ru.netology.WallService
