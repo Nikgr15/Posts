@@ -1,5 +1,6 @@
 
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Test
 import ru.netology.Post
 import ru.netology.WallService
@@ -26,5 +27,12 @@ class WallServiceTest {
         val result = WallService.update(update)
 
         assertFalse(result)
+    }
+
+    @Test
+    fun add() {
+        val service = WallService.add(Post(text = "Нетология", ownerId = 1))
+
+        assertTrue(service.id != 0)
     }
 }
