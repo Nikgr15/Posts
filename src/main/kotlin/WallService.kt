@@ -2,11 +2,10 @@ package ru.netology
 
 object WallService {
     private var posts = emptyArray<Post>()
-    private var nextId = 1
 
+    
     fun add(post: Post): Post {
         posts += post
-        post.id = nextId++
         return posts.last()
     }
 
